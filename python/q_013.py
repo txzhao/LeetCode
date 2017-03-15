@@ -17,3 +17,4 @@ class Solution(object):
                 sum += romans[s[i]]
                 
         return sum + romans[s[-1]]
+    
