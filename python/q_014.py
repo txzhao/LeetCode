@@ -18,3 +18,5 @@ class Solution(object):
         
         # if all pass, then return the minimal common part
         return min(strs)
+
+    
