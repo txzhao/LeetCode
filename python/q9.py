@@ -18,3 +18,4 @@ class Solution(object):
             x /= 10
             
         return reverse_x == old_x
+    
