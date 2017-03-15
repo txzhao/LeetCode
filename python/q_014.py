@@ -3,7 +3,7 @@ class Solution(object):
         # find the longest common prefix string amongst an array of strings.
         # type strs: List[str]
         # rtype: str
-        
+         
         if strs == []:
             return ""
         
