@@ -12,10 +12,9 @@ class Solution(object):
         x = abs(x)
         
         # get digits of the integer reversely
-        while x/10 != 0:
+        while x != 0:
             digit.append(x%10)
             x /= 10
-        digit.append(x)
         
         # get the reverse integer
         for i in range(len(digit)):
