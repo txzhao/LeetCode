@@ -7,7 +7,7 @@ class Solution(object):
         # initialize
         reverse_x = 0
         old_x = x
-        
+         
         # rule out negative
         if x < 0:
             return False
