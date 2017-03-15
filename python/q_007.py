@@ -4,7 +4,7 @@ class Solution(object):
         # function should return 0 when the reversed integer overflows.
         # type x: int
         # rtype: int
-        
+         
         # initialize
         sum = 0
         digit = []
