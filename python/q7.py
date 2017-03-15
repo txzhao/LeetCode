@@ -22,7 +22,7 @@ class Solution(object):
             sum *= 10
             sum += digit[i]
         
-        # check if overflow
+        # check if integer overflows
         # need hard code the limit since numbers in python have no limit
         if abs(sum) > 0x7FFFFFFF: 
             sum = 0
