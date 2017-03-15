@@ -4,11 +4,11 @@ class Solution(object):
         :type x: int
         :rtype: bool
         """
-        rx = 0
-        ox = x
+        reverse_x = 0
+        old_x = x
         if x < 0:
             return False
         while x != 0:
-            rx = 10*rx + x%10
+            reverse_x = 10*reverse_x + x%10
             x /= 10
-        return rx == ox
+        return reverse_x == old_x
