@@ -19,7 +19,7 @@ class Solution(object):
         sign = 0
 
         # aggregate through list nodes
-        # don't forget the case that l1, l2 are null while sign exists
+        # don't forget the case that l1, l2 are null while sign exists 
         while l1 or l2 or sign:
             val1 = val2 = 0
             if l1:
