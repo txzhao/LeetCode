@@ -11,3 +11,4 @@ class Solution(object):
                 nums.remove(val)
             except:
                 return len(nums)
+            
