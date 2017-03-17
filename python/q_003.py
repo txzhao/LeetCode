@@ -1,11 +1,9 @@
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+        # Given a string, find the length of the longest substring without repeating characters.
+        # type s: str
+        # rtype: int
         
-        length = len(s)
         maxlen = 1
         start_idx = 0
         idx_dic = {}
@@ -13,7 +11,7 @@ class Solution(object):
         if length == 0:
             return 0
 
-        for idx in range(length):
+        for idx in range(len(s)):
             if s[idx] in idx_dic and idx_dic[s[idx]] >= start_idx:
                 maxlen = max(maxlen, idx - start_idx)
                 start_idx = idx_dic[s[idx]] + 1
