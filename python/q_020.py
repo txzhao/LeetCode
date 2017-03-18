@@ -19,10 +19,13 @@ class Solution(object):
             # right bracket always starts to appear after the last left one
             elif char in dict.keys():
                 # check if the string starts with a right bracket
+                # the last pushed-in left bracket will be popped up first as the rule of stack
                 if brackets == [] or dict[char] != brackets.pop():
                     return False
             else:
                 return False
-        
+            
+        # if everything goes well, the stack will be empty in the end
+        # since all the stored left brackets could find their fits
         return brackets == []
                 
