@@ -6,10 +6,11 @@ class Solution(object):
         """
         
         line1, line2, line3 = set('qwertyuiop'), set('asdfghjkl'), set('zxcvbnm')
-        chosenwords = []
+        chosen_w = []
         
         for word in words:
-            low_word = set(word.lower()) 
-            if low_word.issubset(line1) or low_word.issubset(line2) or low_word.issubset(line3):
-                chosenwords.append(word)
-        return chosenwords
+            low_w = set(word.lower()) 
+            if low_w.issubset(line1) or low_w.issubset(line2) or low_w.issubset(line3):
+                chosen_w.append(word)
+        return chosen_w
+    
