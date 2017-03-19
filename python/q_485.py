@@ -5,7 +5,6 @@ class Solution(object):
         # rtype: int
                
         maxlen, curlen = 0, 0
-        
         for num in nums:
             if num == 1:
                 curlen += 1
@@ -14,3 +13,5 @@ class Solution(object):
                 curlen = 0
                 
         return maxlen 
+
+    
