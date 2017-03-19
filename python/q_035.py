@@ -6,10 +6,11 @@ class Solution(object):
         # type target: int
         # rtype: int
         
+        # check if target is larger than the maximum in the sorted lise given
+        if target > nums[-1]:
+            return len(nums)
+        
         for idx, value in enumerate(nums):
             if target <= value:
                 return idx
-            else:
-                # check if 
-                if idx >= len(nums) - 1:
-                    return idx + 1
+            
