@@ -8,5 +8,8 @@ class Solution(object):
         
         # XOR relation -> delete '0' -> calculate string length
         return len((bin(x^y)[2:]).replace('0', ''))
+        
+        # another simple way
+        # return bin(x^y).count('1')
 
     
