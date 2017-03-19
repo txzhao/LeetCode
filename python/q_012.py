@@ -21,7 +21,7 @@ class Solution(object):
         
         return romans
     
-        ## another simple way
+        ## another simple implementation
         # M = ["", "M", "MM", "MMM"];
         # C = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"];
         # X = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"];
