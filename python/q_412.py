@@ -14,7 +14,7 @@ class Solution(object):
                 out += "Fizz"
             if (i + 1)%5 == 0:
                 out += "Buzz"
-            if (i + 1)%3 != 0 and (i + 1)%5 != 0:
+            if ((i + 1)%3)*((i + 1)%5) != 0:
                 out += str(i + 1)
             outs.append(out)
         
@@ -22,3 +22,5 @@ class Solution(object):
     
         ## more elegent and clearer one
         # return ['Fizz' * (not i % 3) + 'Buzz' * (not i % 5) or str(i) for i in range(1, n+1)]
+
+        
