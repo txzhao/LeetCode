@@ -10,6 +10,7 @@ class Solution(object):
         
         for word in words:
             low_w = set(word.lower()) 
+            # check if all letters are subset of one of the three lines
             if low_w.issubset(line1) or low_w.issubset(line2) or low_w.issubset(line3):
                 chosen_w.append(word)
         return chosen_w
