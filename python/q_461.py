@@ -6,4 +6,7 @@ class Solution(object):
         # type y: int
         # rtype: int
         
+        # XOR relation -> delete '0' -> calculate string length
         return len((bin(x^y)[2:]).replace('0', ''))
+
+    
