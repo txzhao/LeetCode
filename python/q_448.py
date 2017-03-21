@@ -9,7 +9,9 @@ class Solution(object):
         losenums = []
         
         for i in range(len(nums)):
+            # check if numset contain sequence numbers
             if i + 1 not in numset:
                 losenums.append(i + 1)
         
         return losenums
+    
