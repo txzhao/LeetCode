@@ -4,5 +4,7 @@ class Solution(object):
         # type nums: List[int]
         # rtype: int
         
+        # need to sort nums to be accepted
         nums[:] = sorted(list(set(nums)))
         return len(nums)
+    
