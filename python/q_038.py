@@ -8,12 +8,18 @@ class Solution(object):
         
         for _ in range(n - 1):
             digit, temp, count = s[0], '', 0
+            
             for d in s:
+                # check if current digit equals the stored number
+                # if so, count how many repetitive numbers
                 if d == digit:
                     count += 1
+                    
+                # if not, stop counting and update temp, digit
                 else:
                     temp += str(count) + digit
                     digit, count = d, 1
+              
             temp += str(count) + digit
             s = temp
         
