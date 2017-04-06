@@ -8,7 +8,11 @@ class Solution(object):
         if s == "":
             return 0
         
+        # get rid of redundant space characters
         while s[-1:] == ' ':
             s = s[:-1]
         
+        # rfind returns the index but searches backwards in string
         return len(s) - 1 - s.rfind(' ')
+
+    
