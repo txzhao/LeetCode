@@ -13,7 +13,7 @@ class Solution(object):
         pos = head
     
         while pos:
-            # delete repetitive nodes
+            # delete repetitive nodes iteratively
             while pos.next and pos.next.val == pos.val:
                 pos.next = pos.next.next
             pos = pos.next
