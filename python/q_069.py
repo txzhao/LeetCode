@@ -1,12 +1,13 @@
 class Solution(object):
     def mySqrt(self, x):
-        """
-        :type x: int
-        :rtype: int
-        """
+        # Implement int sqrt(int x).
+        # type x: int
+        # rtype: int
+        
         xstart = 0
         xend = x
         
+        # binary search
         while xstart <= xend:
             interval = xend - xstart + 1
             xmid = xstart + (interval - 1)/2
