@@ -14,5 +14,5 @@ class Solution(object):
             else:
                 twos.add(i)
         
-        # complement set contains single number
+        # complement set contains single numbers
         return list(ones - twos)
