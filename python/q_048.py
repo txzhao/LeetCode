@@ -4,4 +4,5 @@ class Solution(object):
         # type matrix: List[List[int]]
         # rtype: void Do not return anything, modify matrix in-place instead.
         
+        # rotate 90 degrees = first flip upside down, and then transpose
         matrix[:] = map(list, zip(*matrix[::-1]))
