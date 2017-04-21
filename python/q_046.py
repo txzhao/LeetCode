@@ -4,4 +4,5 @@ class Solution(object):
         # type nums: List[int]
         # rtype: List[List[int]]
         
+        # itertools.permutations() returns tuples with all possible orderings, no repeated elements
         return map(list, itertools.permutations(nums))
